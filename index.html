@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt zaliczeniowy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- ///////////////////// NAVBAR ////////////////////// -->
+    <div class="bg-dark">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="#"><img src="./img/logo.png" width="200" alt="logo"></a>
+        </div>
+        <div>
+          <a href="./index.html"><div class="btn btn-dark fw-bold">Loty</div></a> 
+          <a href="./about.html"><div class="btn btn-primary fw-bold">O projekcie</div></a> 
+        </div>
+    </div>
+    <!-- //////////////////// Podgląd miejsc w samolocie ///////////////////// -->
+    <div class="planebg">
+    <div class="plane text-center">
+      <div class="select">
+        <h1>Wybierz miejsce</h1>
+      </div>
+      <div class="exit"></div>
+    <ol>
+      <li>
+        <ol class="seats">
+          <li class="seat">
+            <input type="checkbox" id="1A" onclick="seats.push(this.id)" />
+            <label for="1A">1A</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="1B" onclick="seats.push(this.id)"/>
+            <label for="1B">1B</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="1C" onclick="seats.push(this.id)"/>
+            <label for="1C">1C</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="1D" onclick="seats.push(this.id)"/>
+            <label for="1D">1D</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="1E" onclick="seats.push(this.id)"/>
+            <label for="1E">1E</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="1F" onclick="seats.push(this.id)"/>
+            <label for="1F">1F</label>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol class="seats">
+          <li class="seat">
+            <input type="checkbox" id="2A" onclick="seats.push(this.id)"/>
+            <label for="2A">2A</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="2B" onclick="seats.push(this.id)"/>
+            <label for="2B">2B</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="2C" onclick="seats.push(this.id)"/>
+            <label for="2C">2C</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="2D" onclick="seats.push(this.id)"/>
+            <label for="2D">2D</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="2E" onclick="seats.push(this.id)"/>
+            <label for="2E">2E</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="2F" onclick="seats.push(this.id)"/>
+            <label for="2F">2F</label>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol class="seats">
+          <li class="seat">
+            <input type="checkbox" id="3A" onclick="seats.push(this.id)"/>
+            <label for="3A">3A</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="3B" onclick="seats.push(this.id)"/>
+            <label for="3B">3B</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="3C" onclick="seats.push(this.id)"/>
+            <label for="3C">3C</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="3D" onclick="seats.push(this.id)"/>
+            <label for="3D">3D</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="3E" onclick="seats.push(this.id)"/>
+            <label for="3E">3E</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="3F" onclick="seats.push(this.id)"/>
+            <label for="3F">3F</label>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol class="seats">
+          <li class="seat">
+            <input type="checkbox" id="4A" onclick="seats.push(this.id)"/>
+            <label for="4A">4A</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="4B" onclick="seats.push(this.id)"/>
+            <label for="4B">4B</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="4C" onclick="seats.push(this.id)"/>
+            <label for="4C">4C</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="4D" onclick="seats.push(this.id)"/>
+            <label for="4D">4D</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="4E" onclick="seats.push(this.id)"/>
+            <label for="4E">4E</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="4F" onclick="seats.push(this.id)"/>
+            <label for="4F">4F</label>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <ol class="seats">
+          <li class="seat">
+            <input type="checkbox" id="5A" onclick="seats.push(this.id)"/>
+            <label for="5A">5A</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="5B" onclick="seats.push(this.id)"/>
+            <label for="5B">5B</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="5C" onclick="seats.push(this.id)"/>
+            <label for="5C">5C</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="5D" onclick="seats.push(this.id)"/>
+            <label for="5D">5D</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="5E" onclick="seats.push(this.id)"/>
+            <label for="5E">5E</label>
+          </li>
+          <li class="seat">
+            <input type="checkbox" id="5F" onclick="seats.push(this.id)"/>
+            <label for="5F">5F</label>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <div class="btn btn-dark fw-bold btn-lg inp-width buyTicket">
+          Kup bilet
+      </div>
+      <div class="btn btn-dark fw-bold btn-lg inp-width clearArray">
+        Wyczyść tablicę
+    </div>
+      </div>
+    </div>
+    <!-- /////////////////// Pozostała część strony /////////////////////// -->
+    <div class="position-relative">
+        <img src="./img/background.jpg" alt="background" class="img-fluid d-none d-xl-block">
+        <div class="d-none d-xl-block position-absolute start-50 top-50 translate-middle">
+            <p class="fw-bold fs-1 text-center text-light">Odkrywaj świat!</p>
+            <div class="rounded p-3 bg-cp" style="margin-bottom: 70%;">
+              <p class="chosen">Wybrane miasto to</p>
+                <div class="d-flex align-items-center py-2">
+                    <div>
+                        <label for="departList" class="form-label fw-bold fs-8 m-0">Miejsce wylotu</label>
+                            <input class="form-control inp-height inp-width" list="datalistOptions" id="departList" placeholder="Wybierz miasto">
+                            <datalist id="datalistOptions">
+                            <option value="Paryż">
+                            <option value="Nowy Jork">
+                            <option value="Canberra">
+                            <option value="Pyrzowice">
+                            <option value="Kraków">
+                            </datalist>
+                    </div>
+                    <div>
+                        <label for="destinationList" class="form-label fw-bold fs-8 m-0">Miejsce docelowe</label>
+                            <input class="form-control inp-height inp-width" list="datalistOptions" id="destinationList" placeholder="Wybierz miasto">
+                            <datalist id="datalistOptions">
+                                <option value="Paryż">
+                                    <option value="Nowy Jork">
+                                    <option value="Canberra">
+                                    <option value="Pyrzowice">
+                                    <option value="Kraków">
+                            </datalist>
+                    </div>
+                    <div>
+                        <label for="" class="fw-bold fs-8">Wylot</label>
+                        <input type="date" name="" id="callendar" class="form-control inp-height inp-width ">
+                    </div>
+                    <div>
+                        <label for="" class="fw-bold fs-8">Liczba pasażerów</label>
+                        <select class="form-select inp-height inp-width" aria-label="Default select example" id="passengers">
+                            <option selected>Wybierz liczbę pasażerów</option>
+                            <option value="1">Jeden</option>
+                            <option value="2">Dwóch</option>
+                            <option value="3">Trzech</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label fw-bold fs-8" for="flexCheckDefault">
+                              Dodatkowe ubezpieczenie
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline ms-5">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+                              Dodatkowy bagaż
+                            </label>
+                          </div>
+                    </div>
+                    <div class="btn btn-dark fw-bold btn-lg inp-width pickSeat">
+                        Wybierz miejsce
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="summary bg-dark text-center text-light" >
+      <p class="ticket"></p>
+      <select id="waluty">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="NOK">NOK</option>
+    </select>
+    <ul id="ul"></ul>
+    <p id="price">kurs</p>
+    <input type="date" name="kalendarz" id="kalendarz">
+    <p id="finalPrice"></p>
+    <form id="login-form">
+      <label for="username">Nazwa użytkownika:</label>
+      <input type="text" id="username" name="username"><br>
+  
+      <label for="password">Hasło:</label>
+      <input type="password" id="password" name="password"><br>
+  
+      <button type="submit">Zaloguj</button>
+    </form>
+  
+    <p id="message"></p>
+    </div>
+    <!-- /////////////////// WIDOK MOBILNY ////////////////// -->
+    <div class="d-block d-xl-none rounded-2 bg-cp py-3 px-3">
+
+        <div>
+          <p class="chosen">Wybrane miasto to</p>
+            <label for="departList" class="form-label fw-bold fs-8 m-0">Miejsce wylotu</label>
+                <input class="form-control" list="datalistOptions" id="departListMobile" placeholder="Wybierz miasto">
+                <datalist id="datalistOptions">
+                    <option value="Paryż">
+                        <option value="Nowy Jork">
+                        <option value="Canberra">
+                        <option value="Pyrzowice">
+                        <option value="Kraków">
+                </datalist>
+        </div>
+        <div>
+            <label for="destinationList" class="form-label fw-bold fs-8 m-0">Miejsce docelowe</label>
+                <input class="form-control" list="datalistOptions" id="destinationListMobile" placeholder="Wybierz miasto">
+                <datalist id="datalistOptions">
+                    <option value="Paryż">
+                        <option value="Nowy Jork">
+                        <option value="Canberra">
+                        <option value="Pyrzowice">
+                        <option value="Kraków">
+                </datalist>
+        </div>
+        
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label fw-bold fs-8" for="flexCheckDefault">
+              Dodatkowe ubezpieczenie
+            </label>
+          </div>
+          <div class="form-check form-check-inline ms-5">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label fw-bold fs-8" for="flexCheckChecked">
+              Dodatkowy bagaż
+            </label>
+          </div>
+          <div class="align-items-center justify-content-between">
+            <div>
+                <label for="" class="fw-bold fs-8">Wylot</label>
+                <input type="date" id="callendarMobile" class="form-control inp-height callendar">
+            </div>
+          </div>
+          <div class="py-2">
+            <label for="" class="fw-bold fs-8">Liczba pasażerów</label>
+            <select class="form-select inp-height" aria-label="Default select example" id="passengersMobile">
+                <option selected>Wybierz liczbę pasażerów</option>
+                <option value="1">Jeden</option>
+                <option value="2">Dwóch</option>
+                <option value="3">Trzech</option>
+              </select>
+          </div>
+          <div class="btn btn-dark fw-bold btn-lg d-flex justify-content-center pickSeat" onclick="chooseSeatMobile()">
+            Wybierz miejsce
+            
+        </div>
+        
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
